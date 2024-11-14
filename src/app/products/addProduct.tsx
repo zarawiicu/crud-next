@@ -10,7 +10,7 @@ export default function AddProduct() {
   async function handleSubmit(e: SyntheticEvent) {
     e.preventDefault();
     setIsMutating(true);
-    await fetch("http://localhost:4500/products", {
+    await fetch("http://localhost:4006/products", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -55,7 +55,7 @@ export default function AddProduct() {
               />
             </div>
             <div className="form-control">
-            <label className="label font-bold">Price</label>
+              <label className="label font-bold">Price</label>
               <input
                 type="text"
                 value={price}

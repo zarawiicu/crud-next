@@ -12,7 +12,7 @@ export default function DeleteProduct(product: Product) {
   const router = useRouter();
   async function handleDelete(productId: number) {
     setIsMutating(true);
-    await fetch(`http://localhost:4500/products/${productId}`, {
+    await fetch(`http://localhost:4006/products/${productId}`, {
       method: "DELETE",
     });
     setIsMutating(false);

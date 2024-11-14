@@ -12,7 +12,7 @@ type Product = {
 };
 
 async function getProducts() {
-  const res = await fetch("http://localhost:4005/products", {
+  const res = await fetch("http://localhost:4006/products", {
     cache: "no-store",
   });
   return res.json();

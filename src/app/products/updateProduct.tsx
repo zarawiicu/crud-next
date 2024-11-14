@@ -15,7 +15,7 @@ export default function UpdateProduct(product: Product) {
   async function handleUpdate(e: SyntheticEvent) {
     e.preventDefault();
     setIsMutating(true);
-    await fetch(`http://localhost:4500/products/${product.id}`, {
+    await fetch(`http://localhost:4006/products/${product.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
